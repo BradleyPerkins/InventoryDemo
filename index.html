@@ -16,20 +16,20 @@
     function makeApiCall() {
       var params = {
         // The ID of the spreadsheet to retrieve data from.
-        spreadsheetId: '1_vCrVnOjGJ9mbhPtgTTyxwrENSQ_HV2-pf08Soo1120',  // TODO: Update placeholder value.
+        spreadsheetId: '_vCrVnOjGJ9mbhPtgTTyxwrENSQ_HV2-pf08Soo1120',  // TODO: Update placeholder value.
 
         // The A1 notation of the values to retrieve.
         range: 'my-range',  // TODO: Update placeholder value.
 
         // How values should be represented in the output.
         // The default render option is ValueRenderOption.FORMATTED_VALUE.
-        valueRenderOption: '',  // TODO: Update placeholder value.
+        valueRenderOption: 'ValueRenderOption.FORMATTED_VALUE',  // TODO: Update placeholder value.
 
         // How dates, times, and durations should be represented in the output.
         // This is ignored if value_render_option is
         // FORMATTED_VALUE.
         // The default dateTime render option is [DateTimeRenderOption.SERIAL_NUMBER].
-        dateTimeRenderOption: '',  // TODO: Update placeholder value.
+        dateTimeRenderOption: 'DateTimeRenderOption.SERIAL_NUMBER',  // TODO: Update placeholder value.
       };
 
       var request = gapi.client.sheets.spreadsheets.values.get(params);
